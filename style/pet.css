@@ -15,7 +15,7 @@
     text-decoration: none;
     background-image: linear-gradient(#3030d454, rgba(126, 112, 103, 0.719)), url(../icon/head.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     border: 2px solid rgb(46, 45, 45);
     box-shadow: 5px 5px 20px;
    
@@ -69,4 +69,22 @@ h1{
     font-weight: 300;
     color: #333;
     font-family:'Times New Roman', Times, serif;
+}
+.file{
+    text-align: center;
+    width: 300px;
+    background-color: aqua;
+    border: 1px solid black;
+    margin-left: 400px;
+}
+.file h3{
+    background-color: rgb(14, 209, 79);
+    border: 1px solid rgb(223, 216, 216);
+    border-radius: 15px;
+    display: inline-block;
+    padding: 6px 10px;
+    margin-top: 10px;
+}
+.fiile p{
+    color: aliceblue;
 }
