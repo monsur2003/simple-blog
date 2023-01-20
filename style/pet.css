@@ -1,115 +1,132 @@
 *{
-    margin: 0;
+    margin:0;
     padding: 0;
     box-sizing: border-box;
-   
-    
-   
-    background-repeat: no-repeat;
-    
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* primary section */
+.primary-btn{
+    background-color: #df1a76;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: transform .2s ease-in-out;
+}
+.primary-btn:hover{
+    transform: scale(1.1);
+    background-color: #ca186b;
+    color: #ffffff;
+    box-shadow: 1px 1px 10px #f0047271;
+    border: none;
+}
+.discription{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    width: 500px;
+    margin-top: 35px;
+    margin-bottom: 20px;
     
 }
-.head{
-    text-align: center;
-    height: 300px;
-    text-decoration: none;
-    background-image: linear-gradient(#3030d454, rgba(126, 112, 103, 0.719)), url(../icon/head.jpg);
+.title{
+    font-size: 35px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 100px;
+}
+.container{
+    width: 1100px;
+    margin: auto;
+}
+
+header{
+    width: 100%;
+    max-width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(to top, #0000ff3f,#8000804b), url(../pet/cat\ \(17\).jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    border: 2px solid rgb(46, 45, 45);
-    box-shadow: 5px 5px 20px;
-   
 }
-h1{
-    margin-top: 50px;
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding-top: 50px;
+    color: #ffffff;
 }
-.logo{
-    width: 30px;
-    height: auto;
-    
+ul{
+    display: flex;
+    list-style: none;
+
+}
+.navbar h1{
+    font-size: 45px;
+    font-weight: 800;
+}
+ul li{
+    margin-left: 15px;
+    /* font-size: 22px;
+    font-weight: 600; */
+    transition: color .1s ease-in-out;
+    /* transition: border .5s ease ; */
+}
+ul li:hover{
+    border-bottom: 1px solid #1b18ca;
+     transform: scale(1.1); 
+    color: #df1a76;
 }
 
-.dis{
-    background-color: #19ffcd;
-    margin: 30px 50px;
-    color: black;
-    text-transform:capitalize;
-    border: 6px solid rgb(39, 38, 38);
-    border-radius: 25px;
-    text-align: center;
-    box-shadow: 1px 5px 10px #333;
-    display: inline-block;
-    width: 300px;
+/* pets-collection */
+main{
+    width: 1050px;
+    max-width: 100%;
+    margin: auto;
 }
-.dis button{
-     border: 1px solid black;
-     background-color: rgba(196, 9, 243, 0.877);
-     border-radius: 20px;
-     padding: 8px 20px 5px;
-     margin-top: 5px;
-     text-transform:uppercase;
-     box-shadow: 1px 3px 7px rgb(70, 66, 66);
-     cursor: pointer;
-     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-     color: rgb(235, 235, 229);
-     font-weight: 600;
-     letter-spacing: 3px;
-    }
-
+.pets-collection{
+    display: flex;
+     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
     
-    button:hover{
-        color: aqua;
-        background-color: #333;
-        
-    }
-    
-
-.dis p{
-    margin: 10px 30px;
-    font-weight: 300;
-    color: #333;
-    font-family:'Times New Roman', Times, serif;
 }
-.file{
-    text-align: center;
-    width: 300px;
-    background-color: aqua;
-    border: 5px solid black;
-    margin-left: 400px;
-    height: 300px;
-    border-radius: 30px;
+.collection{
+    margin-bottom: 40px;
 }
-.file h3{
-    background-color: rgb(14, 209, 79);
-    border: 1px solid rgb(223, 216, 216);
-    border-radius: 15px;
-    display: inline-block;
-    padding: 6px 10px;
+.pet-text{
     margin-top: 10px;
 }
-.file p{
-    color:#333;
-    margin-top: 20px;
+.pet-title{
+    color: rgba(20, 20, 20, 0.705);
+    font-size: 22px;
+}
+.pro-btn{
+    background-color: #1b18ca;
+    color: #ffffff;
+    border: none;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.pet img {
+    width: 280px;
+    height: 160px;
+    border-radius: 8px;
+}
+.pets{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   
+    grid-column-gap: 25px;
+    grid-row-gap: 30px;
+   
+}
+.pet{
+   padding: 20px;
+    box-shadow: 0px 20px 50px rgba(8, 8, 8, 0.212);
     text-align: center;
-    padding: 1px 10px;
-
-
-
-}
-.file button{
-    margin-top: 40px;
-    background-color: rgb(27, 109, 233);
-    color: rgba(194, 194, 194, 0.89);
-    border: 1px solid black;
-    border-radius: 15px;
-    padding: 6px 15px;
-    text-transform: uppercase;
-    font-family: serif;
-    cursor: pointer;
-
-}
-.file button :hover{
-    background-color: rgb(12, 24, 36);
-    color: rgb(46, 41, 41);
-    
 }
